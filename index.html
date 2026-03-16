@@ -14,42 +14,43 @@
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
-    </div>
-    <div class="balance-container">
-        <h2>Your Balance</h2>
-        <h1 class="balance-amount">0</h1>
-        <div class="summary">
-            <div class="income-container">
-                <h3>Income</h3>
-                <h2 class="income-amount">0</h2>
-            </div>
-            <div class="expense-container">
-                <h3>Expense</h3>
-                <h2 class="expense-amount">0</h2>
+
+        <div class="balance-container">
+            <h2>Your Balance</h2>
+            <h1 class="balance-amount">0</h1>
+            <div class="summary">
+                <div class="income-container">
+                    <h3>Income</h3>
+                    <h2 class="income-amount">0</h2>
+                </div>
+                <div class="expense-container">
+                    <h3>Expense</h3>
+                    <h2 class="expense-amount">0</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="main-content">
-        <div class="transaction-container">
-            <h2>Transactions</h2>
-            <ul id="transaction-list">
-                <!-- Transactions will be shown here -->
-            </ul>
-        </div>
-        <div class="form-container">
-            <h2>Add Transactions</h2>
-            <form id="transaction-form">
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <input type="text" name="" id="description" placeholder="Enter description" required>
-                </div>
-                <div class="form-group">
-                    <label for="amount">Amount</label>
-                    <input type="text" name="" id="Amount" placeholder="Enter amount" required>
-                    <small>use negative (-) for expenses</small>
-                </div>
-                <button id="btn-add-transaction">Add Transactions</button>
-            </form>
+        <div class="main-content">
+            <div class="transaction-container">
+                <h2>Transactions</h2>
+                <ul id="transaction-list">
+                    <!-- Transactions will be shown here -->
+                </ul>
+            </div>
+            <div class="form-container">
+                <h2>Add Transactions</h2>
+                <form id="transaction-form">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text"  id="description" placeholder="Enter description" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" placeholder="Enter amount" required>
+                        <small>use negative (-) for expenses</small>
+                    </div>
+                    <button type="submit">Add Transaction</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
